@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Cadastro de recrutas || Atividade prática</title>
+</head>
+<body>
+
+    <form>
+        <h1>Cadastro de recrutas</h1>
+
+        <div id="nome-sobrenome">
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+            <span id="erroNome" class="hide">Nome possui caracteres inválidos ou é vazio</span>
+
+            <input type="text" id="sobrenome" placeholder="Digite seu primeiro sobrenome" required>
+            <span id="erroSobrenome" class="hide">Sobrenome possui caracteres inválidos ou é vazio</span>
+        </div>
+    
+        <div id="curso">
+            <label>Selecione o curso</label>
+            <select>
+                <option value="">CFO - POLICIA</option>
+                <option value="">CFO - BOMBEIROS</option>
+                <option value="">POLICIA CIVIL</option>
+                <option value="">POLICIA FEDERAL</option>
+                <option value="">AERONAUTICA</option>
+                <option value="">INFANTARIA</option>
+                <option value="">MARINHA</option>
+            </select>
+        </div>
+
+        <div id="data-nasc">
+            <label>Data de nascimento</label>
+            <input type="date" id="input-data-nasc" >
+        </div> 
+
+        <button id="cadastrar" type="button">Cadastrar</button>
+    </form>
+
+    <div id="output" class="hide">
+        <p>Nome Completo: </p>
+        <p>Campo de estudo:</p>
+        <p>Idade: </p>
+    </div>
+    
+    <!--SCRIPT-->
+    <script src="script.js"></script>
+</body>
+</html>

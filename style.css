@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.hide{
+    display:none;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20vh 15vw 20vh 15vw;
+
+    background-color: rgb(228, 110, 110);
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width:45vw;
+
+    background-color:rgba(255, 255, 255, 0.795);
+    color:black;
+
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px rgb(92, 92, 92);
+
+    padding:1vh 2vw;
+
+
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom:0.5vh;
+}
+
+#nome-sobrenome{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding:1vh 2vw 1vh 2vw;
+
+    border-bottom: 1px solid #ccc;
+    width:40vw;
+}
+
+#nome-sobrenome input{
+    width:40vw;
+    margin-top:1vh;
+    font-size:1.5rem;
+    padding-left: 1vw;
+}
+
+#nome-sobrenome input::placeholder{
+    text-align: center;
+}
+
+
+#curso, #data-nasc{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width:45vw;
+
+    font-size:1.5rem;
+
+    padding:0.2vw;
+}
+
+#input-data-nasc, select{
+    font-size:1.3rem;
+    padding-left:0.5vw;
+}
+
+button{
+    width:20vw;
+    background-color:transparent;
+    border-radius: 5px;
+
+    padding:0.3vw;
+
+    margin-top:2vh;
+    margin-bottom:2vh;
+
+    font-size:1.2rem;
+}
+
+button:hover{
+    background-color: rgb(111, 111, 209);
+    color:white;
+    transition:1s;
+    border-color: transparent;
+}
+
+span{
+    color:rgb(209, 36, 36);
+    font-size:1.5rem;
+
+}
