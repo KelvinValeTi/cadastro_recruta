@@ -13,8 +13,8 @@ const erroSobrenome = document.getElementById("erroSobrenome");
 const erroDate = document.getElementById("erroDate");
 
 //variaveis output
-let nomeCompleto;
-let idade;
+let nomeCompleto="";
+let idade=0;
 let campoEstudo;
 
 //button cadastrar
@@ -51,7 +51,9 @@ function validar(){
 
     //verifica se há mensagens de erro, se não houver, salva o nome completo.
     if(erroNome.classList.contains("hide") && erroSobrenome.classList.contains("hide")){
-        nomeCompleto = valida_nome+" "+valida_sobrenome;
+        nomeCompleto = nomeValor+" "+sobrenomeValor;
+    }else{
+        nomeCompleto="";
     }
 }
 
@@ -85,6 +87,26 @@ function validaIdade(){
     }
 }
 
+function exibeResultado(){
+    const form = document.getElementById("form");
+    form.classList.add("hide");
+
+    const divOutput = document.getElementById("output");
+    divOutput.classList.remove("hide");
+    
+    let nomeOutput = document.createElement('p');
+    let campoEstudoOutput = document.createElement('p');
+    let idadeOutput = document.createElement('p');
+
+    nomeOutput.textContent = "Nome Completo: "+nomeCompleto;
+    campoEstudoOutput.textContent = "Campo de estudo: "+campoEstudo;
+    idadeOutput.textContent = "Idade: "+idade+" anos";
+
+    divOutput.appendChild(nomeOutput);
+    divOutput.appendChild(campoEstudoOutput);
+    divOutput.appendChild(idadeOutput);
+}
+
 
 /**
  * EVENTOS
@@ -100,6 +122,8 @@ cadastrar.addEventListener("click", ()=>{
     //valida data e já lança a idade
     validaIdade();
 
+    //exibir resultado
+    if(nomeCompleto!="" || idade!=0){
+        exibeResultado();
+    }
 });
-
-

@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-.hide{
-    display:none;
-}
-
 body{
     display: flex;
     flex-direction: row;
@@ -109,4 +105,27 @@ button:hover{
 span{
     color:rgb(209, 36, 36);
     font-size:1.5rem;
+}
+
+#output{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width:45vw;
+
+    background-color:rgba(255, 255, 255, 0.795);
+    color:black;
+
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px rgb(92, 92, 92);
+
+    padding:2vh 2vw;
+
+    font-size:1.7rem;
+}
+
+.hide{
+    display:none !important;
 }
