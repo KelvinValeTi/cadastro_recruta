@@ -22,20 +22,21 @@
     
         <div id="curso">
             <label>Selecione o curso</label>
-            <select>
-                <option value="">CFO - POLICIA</option>
-                <option value="">CFO - BOMBEIROS</option>
-                <option value="">POLICIA CIVIL</option>
-                <option value="">POLICIA FEDERAL</option>
-                <option value="">AERONAUTICA</option>
-                <option value="">INFANTARIA</option>
-                <option value="">MARINHA</option>
+            <select id="curso-option">
+                <option value="cfo-policia" selected>CFO - POLICIA</option>
+                <option value="cfo-bombeiros">CFO - BOMBEIROS</option>
+                <option value="policia-civil">POLICIA CIVIL</option>
+                <option value="policia-fedeal">POLICIA FEDERAL</option>
+                <option value="aeronautica">AERONAUTICA</option>
+                <option value="infantaria">INFANTARIA</option>
+                <option value="marinha">MARINHA</option>
             </select>
         </div>
 
         <div id="data-nasc">
             <label>Data de nascimento</label>
             <input type="date" id="input-data-nasc" >
+            <span id="erroDate" class="hide">O recruta deve ter idade igual ou superior a 18 anos</span>
         </div> 
 
         <button id="cadastrar" type="button">Cadastrar</button>
