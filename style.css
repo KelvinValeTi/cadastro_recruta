@@ -110,8 +110,8 @@ span{
 #output{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
 
     width:45vw;
 
@@ -128,4 +128,55 @@ span{
 
 .hide{
     display:none !important;
+}
+
+/*MEDIA QUERRY*/
+@media (max-width: 692px) and (min-width:501px){
+    body{
+        background-color: blue;
+        padding: 20vh 10vw 20vh 10vw;    
+    }
+    form{
+        width:55vw;
+    }
+    #output{
+        width:55vw;
+    }
+}
+@media (max-width: 500px){
+    body{
+        background-color: green;
+        padding: 20vh 5vw 20vh 5vw;    
+    }
+
+    form{
+        width:65vw;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    #nome-sobrenome input{
+        font-size:1.3rem;
+    }
+
+    #curso, #data-nasc{
+        font-size:1.3rem;
+    }
+    #input-data-nasc, select{
+        font-size:1rem;
+    }
+
+    button{
+        font-size:1rem;
+        width:30vw;
+    }
+
+    span{
+        font-size:1.3rem;
+    }
+    #output{
+        width:65vw;
+    }
 }

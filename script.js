@@ -98,9 +98,9 @@ function exibeResultado(){
     let campoEstudoOutput = document.createElement('p');
     let idadeOutput = document.createElement('p');
 
-    nomeOutput.textContent = "Nome Completo: "+nomeCompleto;
-    campoEstudoOutput.textContent = "Campo de estudo: "+campoEstudo;
-    idadeOutput.textContent = "Idade: "+idade+" anos";
+    nomeOutput.textContent = "- Nome Completo: "+nomeCompleto;
+    campoEstudoOutput.textContent = "- Campo de estudo: "+campoEstudo;
+    idadeOutput.textContent = "- Idade: "+idade+" anos";
 
     divOutput.appendChild(nomeOutput);
     divOutput.appendChild(campoEstudoOutput);
