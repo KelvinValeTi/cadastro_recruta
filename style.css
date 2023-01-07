@@ -133,7 +133,6 @@ span{
 /*MEDIA QUERRY*/
 @media (max-width: 692px) and (min-width:501px){
     body{
-        background-color: blue;
         padding: 20vh 10vw 20vh 10vw;    
     }
     form{
@@ -145,7 +144,6 @@ span{
 }
 @media (max-width: 500px){
     body{
-        background-color: green;
         padding: 20vh 5vw 20vh 5vw;    
     }
 
