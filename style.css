@@ -61,6 +61,7 @@ h1{
 
 #nome-sobrenome input::placeholder{
     text-align: center;
+    font-size:1.3rem;
 }
 
 
@@ -131,17 +132,38 @@ span{
 }
 
 /*MEDIA QUERRY*/
-@media (max-width: 692px) and (min-width:501px){
+@media (max-width: 775px) and (min-width:693px){
+    #nome-sobrenome input::placeholder{
+        text-align: center;
+        font-size:1.1rem;
+    }
+}
+
+@media (max-width: 692px) and (min-width:581px){
     body{
         padding: 20vh 10vw 20vh 10vw;    
     }
     form{
         width:55vw;
     }
+
+    #nome-sobrenome input::placeholder{
+        text-align: center;
+        font-size:1rem;
+    }
+
     #output{
         width:55vw;
     }
 }
+
+@media (max-width: 580px) and (min-width:501px){
+    #nome-sobrenome input::placeholder{
+        text-align: center;
+        font-size:0.8rem;
+    }
+}
+
 @media (max-width: 500px){
     body{
         padding: 20vh 5vw 20vh 5vw;    
@@ -157,6 +179,11 @@ span{
 
     #nome-sobrenome input{
         font-size:1.3rem;
+    }
+    
+    #nome-sobrenome input::placeholder{
+        text-align: center;
+        font-size:0.8rem;
     }
 
     #curso, #data-nasc{
